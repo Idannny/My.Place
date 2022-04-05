@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html lang="en"><
-  head><meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Home | Portfolio template</title>
-    <meta name="description" content="Page-specific description">
-  <meta name="keywords" content="Page-specific keywords">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon"><link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png">
-  <link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="static/css/screen.min.css"><link rel="stylesheet" href="static/css/custom.min.css">
-  <script src="static/js/head.min.js">
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
 
-</script></head><body><script>progressJs().setOptions({overlayMode: true, theme: 'custom'}).start();
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  if(window.attachEvent) {
-    window.attachEvent('onload', function(){ progressJs().end(); });
-  }   
-  else {
-    if(window.onload) {
-        var curronload = window.onload;
-        var newonload = function() {
-            curronload();
-            progressJs().end();
-        };
-        window.onload = newonload;
-    } 
+          <title>
+            Home | Portfolio template
+          </title>
+
+            <meta name="description" content="Page-specific description">
+            <meta name="keywords" content="Page-specific keywords">
+          <link rel="shortcut icon" href="favicon.ico">
+          <link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon"><link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png">
+          <link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png">
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+          <link rel="stylesheet" href="static/css/screen.min.css"><link rel="stylesheet" href="static/css/custom.min.css">
+          <script src="static/js/head.min.js"></script>
+      </head>
+
+<body>
+
+  <script>progressJs().setOptions({overlayMode: true, theme: 'custom'}).start();
+
+    if(window.attachEvent){
+      window.attachEvent('onload', function(){ progressJs().end(); });
+    }   
     else {
-        window.onload = function(){ progressJs().end(); };
+      if(window.onload) {
+          var curronload = window.onload;
+          var newonload = function() {
+              curronload();
+              progressJs().end();
+          };
+          window.onload = newonload;
+      } 
+      else {
+          window.onload = function(){ progressJs().end(); };
+      }
     }
-    }</script><!-- Header--><header class="main-header">
+  </script><!-- Header--><header class="main-header">
       <div class="first-nav"><div class="container">
         <nav class="first-nav__links">
           <ul>
@@ -40,15 +50,19 @@
               </a>
         </li>
         <li><a href="#">
-          français
-
+          françaiS
         </a>
       </li>
       <li>
         <a href="#">
           deutsch
         </a>
-        </li></ul></nav><a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">Menu</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">
+      Menu
+    </a>
       </div></div><div class="second-nav js-nav"><div class="container"><a class="second-nav__logo"><span>JD</span></a>
         <nav class="menu"><ul><li><a class="js-link js-anchor is-selected" href="#home">Home</a></li><li><a class="js-link js-anchor" href="#about">About</a>
         </li><li><a class="js-link js-anchor" href="#services">Services</a></li><li><a class="js-link js-anchor" href="#process">Process</a>
