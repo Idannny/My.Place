@@ -2,4 +2,4 @@
 Danny Padilla
 
 site: 
-https://idannny.github.io/Ardude/
+https://idannny.github.io/My.Place
