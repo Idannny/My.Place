@@ -2,4 +2,4 @@
 Danny Padilla
 
 site: 
-https://idannny.github.io/My.Place
+https://idannny.github.io/My.Place/build/index
