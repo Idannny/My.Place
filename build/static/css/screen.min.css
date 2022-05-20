@@ -838,7 +838,7 @@ a:hover {
 }
 
 .services__item:hover:before {
-    color: #ffa726
+    color: #4272db
 }
 
 .advantages {
@@ -973,12 +973,12 @@ a:hover {
 
 .process__step:hover>.process__step-icon,
 .process__step:hover>.process__step-icon.is-active {
-    border-color: #ffa726
+    border-color: #4272db
 }
 
 .process__step:hover>.process__step-icon:before,
 .process__step:hover>.process__step-icon.is-active:before {
-    text-shadow: -1px -1px 0 #ffa726, 0 -1px 0 #ffa726, 1px -1px 0 #ffa726, 1px 0 0 #ffa726, 1px 1px 0 #ffa726, 0 1px 0 #ffa726, -1px 1px 0 #ffa726, -1px 0 0 #ffa726
+    text-shadow: -1px -1px 0 #4272db, 0 -1px 0 #4272db, 1px -1px 0 #4272db, 1px 0 0 #4272db, 1px 1px 0 #4272db, 0 1px 0 #4272db, -1px 1px 0 #4272db, -1px 0 0 #4272db
 }
 
 .process__step:hover+.process__step-info {
@@ -1040,11 +1040,11 @@ a:hover {
 }
 
 .process__step-icon.is-active {
-    border-color: #ffa726
+    border-color: #3f4145
 }
 
 .process__step-icon.is-active:before {
-    text-shadow: -1px -1px 0 #ffa726, 0 -1px 0 #ffa726, 1px -1px 0 #ffa726, 1px 0 0 #ffa726, 1px 1px 0 #ffa726, 0 1px 0 #ffa726, -1px 1px 0 #ffa726, -1px 0 0 #ffa726
+    text-shadow: -1px -1px 0 #2ebf79, 0 -1px 0 #ffa726, 1px -1px 0 #ffa726, 1px 0 0 #ffa726, 1px 1px 0 #ffa726, 0 1px 0 #ffa726, -1px 1px 0 #ffa726, -1px 0 0 #ffa726
 }
 
 .process__step-info {
