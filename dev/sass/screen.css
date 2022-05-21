@@ -282,23 +282,23 @@ a:hover {
 }
 
 .icon_strategy:before {
-  content: "\e807";
+  content: "•"; 
 }
 
 .icon_improve:before {
-  content: "\e80f";
+  content: "•"; 
 }
 
 .icon_plan:before {
-  content: "\e80c";
+  content: "•"; 
 }
 
 .icon_recover:before {
-  content: "\e80a";
+  content: "•"; 
 }
 
 .icon_support:before {
-  content: "\e80e";
+  content: "•"; 
 }
 
 .icon_develop:before {
@@ -314,7 +314,7 @@ a:hover {
 }
 
 .icon_gotop:before {
-  content: "\e817";
+  content: "↓";
 }
 
 .icon_gonext:before {
@@ -362,7 +362,7 @@ a:hover {
 }
 
 .icon_link:before {
-  content: "\e819";
+  content: "✧";
 }
 
 .icon_phone:before {
@@ -422,7 +422,7 @@ a:hover {
   left: 0;
   height: 20px;
   overflow: hidden;
-  background-color: #5ca653;
+  background-color: #5386a6;
   width: 100%;
   margin: 0 0;
   clear: both;
@@ -839,7 +839,7 @@ a:hover {
 
 .about-card__header {
   padding: 20px;
-  background-color: #FFA726;
+  background-color: #030201;
 }
 
 .about-card__header h2, .about-card__header h4 {
@@ -933,13 +933,13 @@ a:hover {
 }
 
 .services__item:hover:before {
-  color: #FFA726;
+  color: #83b4f8;
 }
 
 .advantages {
   text-align: center;
-  border-left: 10px solid #FFA726;
-  border-right: 10px solid #FFA726;
+  border-left: 10px solid #83b4f8;
+  border-right: 10px solid #83b4f8;
   float: left;
   width: 98%;
   width: calc(100% - 40px);
@@ -1002,7 +1002,7 @@ a:hover {
 
 .advantages blockquote {
   padding: 40px 0;
-  border-bottom: 10px solid #FFA726;
+  border-bottom: 10px solid #000000;
 }
 
 @media screen and (max-width: 600px) {
@@ -1226,11 +1226,11 @@ a:hover {
 }
 
 .process__step-icon.is-active {
-  border-color: #FFA726;
+  border-color: #7195dd;
 }
 
 .process__step-icon.is-active:before {
-  text-shadow: -1px -1px 0 #FFA726, 0 -1px 0 #FFA726, 1px -1px 0 #FFA726, 1px 0 0 #FFA726, 1px 1px 0 #FFA726, 0 1px 0 #FFA726, -1px 1px 0 #FFA726, -1px 0 0 #FFA726;
+  text-shadow: -1px -1px 0 #7195dd, 0 -1px 0 #7195dd, 1px -1px 0 #7195dd, 1px 0 0 #7195dd, 1px 1px 0 #7195dd, 0 1px 0 #7195dd, -1px 1px 0 #7195dd, -1px 0 0 #7195dd;
 }
 
 .process__step-info {
@@ -1243,7 +1243,7 @@ a:hover {
   margin: 40px 0 50px;
   padding: 10px;
   background-color: #ecf0f1;
-  border-top: 10px solid #FFA726;
+  border-top: 10px solid #7195dd;
   -webkit-box-shadow: 2px 2px 4px -2px #2c3e50;
           box-shadow: 2px 2px 4px -2px #2c3e50;
 }
@@ -1805,7 +1805,7 @@ a:hover {
   position: relative;
   z-index: 100;
   width: 100%;
-  background-color: #FFA726;
+  background-color: #4272db;
   color: #ecf0f1;
   -webkit-box-shadow: 0 -2px 2px -1px #2c3e50;
           box-shadow: 0 -2px 2px -1px #2c3e50;
@@ -1817,7 +1817,7 @@ a:hover {
   top: -30px;
   left: 50%;
   margin-left: -40px;
-  border-bottom: 40px solid #FFA726;
+  border-bottom: 40px solid #4272db;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
 }

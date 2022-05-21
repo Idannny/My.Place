@@ -1,55 +1,60 @@
 <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
 
-          <title>
-            Home | Portfolio
-          </title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-            <meta name="description" content="Page-specific description">
-            <meta name="keywords" content="Page-specific keywords">
+  <title>
+    Home | Portfolio
+  </title>
 
-          <link rel="shortcut icon" href="favicon.ico">
+  <meta name="description" content="Page-specific description">
+  <meta name="keywords" content="Page-specific keywords">
 
-          <link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon"><link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png">
-          <link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png">
-          <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-          <link rel="stylesheet" href="static/css/screen.min.css"><link rel="stylesheet" href="static/css/custom.min.css">
-          <script src="static/js/head.min.js"></script>
-      </head>
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic"
+    rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="static/css/screen.min.css">
+  <link rel="stylesheet" href="static/css/custom.min.css">
+  <script src="static/js/head.min.js"></script>
+</head>
 
 <body>
 
-  <script>progressJs().setOptions({overlayMode: true, theme: 'custom'}).start();
+  <script>progressJs().setOptions({ overlayMode: true, theme: 'custom' }).start();
 
-    if(window.attachEvent){
-      window.attachEvent('onload', function(){ progressJs().end(); });
-    }   
+    if (window.attachEvent) {
+      window.attachEvent('onload', function () { progressJs().end(); });
+    }
     else {
-      if(window.onload) {
-          var curronload = window.onload;
-          var newonload = function() {
-              curronload();
-              progressJs().end();
-          };
-          window.onload = newonload;
-      } 
+      if (window.onload) {
+        var curronload = window.onload;
+        var newonload = function () {
+          curronload();
+          progressJs().end();
+        };
+        window.onload = newonload;
+      }
       else {
-          window.onload = function(){
-            progressJs().end();
-            };
+        window.onload = function () {
+          progressJs().end();
+        };
       }
     }
   </script>
 
   <!-- Header-->
   <header class="main-header">
-    
+
     <div class="first-nav">
-        <!--
+      <!--
         <div class="container">
           
           <nav class="first-nav__links">
@@ -83,91 +88,91 @@
             </a>
         </div>
       -->
+    </div>
+
+    <div class="second-nav js-nav">
+      <div class="container">
+
+        <a class="second-nav__logo">
+          <!--put an icon instead of -->
+          <span>
+            <img src="static/images/projects/arrow.png">
+          </span>
+        </a>
+
+        <nav class="menu">
+          <ul>
+            <li>
+              <a class="js-link js-anchor is-selected" href="#home">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a class="js-link js-anchor" href="#about">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a class="js-link js-anchor" href="#services">
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a class="js-link js-anchor" href="#process">
+                Process
+              </a>
+
+            </li>
+
+            <li>
+              <a class="js-link js-anchor" href="#projects">
+                Projects
+              </a>
+            </li>
+
+            <li>
+              <a class="js-link js-anchor" href="#testimonials">
+                Testimonials
+              </a>
+            </li>
+
+            <li>
+              <a class="js-link js-anchor" href="#contacts">
+                Contacts
+              </a>
+            </li>
+          </ul>
+
+        </nav>
       </div>
-  
-      <div class="second-nav js-nav">
-        <div class="container">
-
-            <a class="second-nav__logo">
-              <!--put an icon instead of -->
-                <span>
-                  <img src="static/images/projects/arrow.png">
-                </span>
-            </a>
-
-              <nav class="menu">
-                <ul>
-                    <li>
-                      <a class="js-link js-anchor is-selected" href="#home">
-                        Home
-                      </a>
-                    </li>
-
-                    <li>
-                      <a class="js-link js-anchor" href="#about">
-                        About
-                      </a>
-                    </li>
-
-                    <li>
-                      <a class="js-link js-anchor" href="#services">
-                        Services
-                      </a>
-                    </li>
-
-                    <li>
-                      <a class="js-link js-anchor" href="#process">
-                        Process
-                      </a>
-
-                    </li>
-
-                    <li>
-                      <a class="js-link js-anchor" href="#projects">
-                        Projects
-                      </a>
-                    </li>
-                
-                    <li>
-                      <a class="js-link js-anchor" href="#testimonials">
-                        Testimonials
-                      </a>
-                    </li>
-
-                    <li>
-                      <a class="js-link js-anchor" href="#contacts">
-                        Contacts
-                      </a>
-                    </li>
-                </ul>
-              
-              </nav>
-        </div>
-      </div>
+    </div>
 
   </header>
-    <!-- Home section-->
-    
-    <section class="home-section" id="home">
-      <div class="home-section__bg">'
+  <!-- Home section-->
 
+  <section class="home-section" id="home">
+    <div class="home-section__bg">'
+
+    </div>
+
+    <div class="home-section__overlay">
+      <div class="container">
+        <header class="home-section__header">
+
+          <h1>
+            Ivan Padilla
+          </h1>
+
+          <h2>
+            Intermediate Programmer & Artsy Goof
+          </h2>
+
+        </header>
       </div>
-          
-      <div class="home-section__overlay">
-        <div class="container">
-          <header class="home-section__header">
-
-            <h1>
-              Ivan Padilla
-            </h1>
-
-            <h2>
-              Intermediate Programmer & Artsy Goof
-            </h2>
-            
-          </header>
-        </div>
-      </div>
+    </div>
 
   </section>
 
@@ -180,11 +185,13 @@
           <h2>
             About me
           </h2>
-            
+
           <h4>
-            
-            I am based in Southern California with interests in Statistical Learning and Renewable energy. I also like to talk philosophy and language.
-            I can communicate conversationally in English, Spanish, and ASL. I have fun Video editing using Adobe Premiere Pro, and photo editing using photoshop.
+
+            I am based in Southern California with interests in Statistical Learning and Renewable energy. I also like
+            to talk philosophy and language.
+            I can communicate conversationally in English, Spanish, and ASL. I have fun Video editing using Adobe
+            Premiere Pro, and photo editing using photoshop.
           </h4>
 
         </header>
@@ -199,18 +206,21 @@
           <p>
             IDEs I like: R studio, Pycharm, Visual Studio Code, wsl-nano/vim, Qt
           </p>
-              
+
           <blockquote>
             <p>
-               I am currently Learning C# and fortifying my ML education. Recently finished a class where I have experimented with some simple Network protocols including TCP and Distance Vector Routing 
-               using TinyOS.
+              I am currently Learning C# and fortifying my ML education. Recently finished a class where I have
+              experimented with some simple Network protocols including TCP and Distance Vector Routing
+              using TinyOS.
             </p>
           </blockquote>
 
           <p>
-            Research that I have participated in include hands on field work and data collection and analysis. While in college I have participated in Unmanned Aircraft systems 
-            lab and collected data for modeling an invasive plant species. Currently my research is aligned with UC solar under a UCM professor. My duties include analyzing
-            formatted data in order to better understand a developing software.  
+            Research that I have participated in include hands on field work and data collection and analysis. While in
+            college I have participated in Unmanned Aircraft systems
+            lab and collected data for modeling an invasive plant species. Currently my research is aligned with UC
+            solar under a UCM professor. My duties include analyzing
+            formatted data in order to better understand a developing software.
 
           </p>
 
@@ -218,41 +228,38 @@
             <span>
               Current status:
             </span>
-            I have Recently Graduated! 
+            I have Recently Graduated!
             On the job Search...
           </p>
         </div>
       </div>
     </div>
-  
+
   </section>
-  
+
   <!-- Services section-->
-  
+
   <section class="common-section" id="services">
     <div class="container">
 
       <header class="common-section__header">
         <h2>
-          Interests
-
+          Some of my Interests
         </h2>
 
       </header>
-                
-      <div class="grid-container">
 
+      <div class="grid-container">
         <ul class="services services_advisory">
-       
           <li class="services__item icon icon_research">
             <h4>
-            Computer Hardware
+              Computer Hardware
             </h4>
-            
-            <p>Nam volutpat nisl arcu, id finibus augue vulputate id. Donec vestibulum enim eget nisi
-               feugiat convallis vitae non orci. Maecenas pretium nunc quis molestie dapibus. Curabitur elementum scelerisque pellentesque.
-                Sed eu nunc ac orci scelerisque vestibulum eu nec sem. Integer lobortis elit ac ligula sollicitudin, quis vehicula lacus commodo
-              
+            <p>
+              I built my Desktop! I have a Mini-tower with an AMD Processor and AMD Video Card with some substantial
+              RAM.
+              I also have a simple arduino that i mess with from time to time. I have some experience with soldering as
+              well as repairing computer components.
             </p>
           </li>
 
@@ -261,67 +268,46 @@
               Languages
             </h4>
             <p>
-              Fusce ligula nulla, finibus et suscipit sed, porttitor lacinia lectus. Suspendisse potenti. Nunc gravida mauris nec blandit euismod.
-               Cras ultricies massa arcu, quis convallis turpis varius sit amet. Duis et convallis magna. Phasellus sit amet ex efficitur, facilisis
-                ante a, tincidunt augue. Donec porttitor posuere luctus.
+              I have the most Practice in C++ and I have interests in Python and SQL. As far as world languages go I have conversationaly skills in 
+              spanish, English and ASL.  
             </p>
           </li>
-
-         
         </ul>
-                  
+
         <ul class="services services_pm">
           <li class="services__item icon icon_support">
             <h4>
               Outdoors
+            </h4>
 
-             </h4>
-            
-            <p>(Fishing Hiking)Vestibulum hendrerit rhoncus augue ac consequat. Ut blandit viverra ante, eu iaculis enim dignissim eu. Etiam hendrerit dapibus 
-              imperdiet. Pellentesque mattis aliquam dui id dictum. Curabitur at velit a felis volutpat venenatis nec id turpis. Sed sed magna 
-              a leo porttitor sodales ac a nisi. In hac habitasse platea dictumst. Fusce imperdiet vulputate arcu, varius tincidunt ex venenatis sed.
+            <p>
+              This year I want to do more Hiking and fishing. There are some trails near my house and visiting those may be the best. I want to do more crazy hikes!
+
             </p>
           </li>
 
           <li class="services__item icon icon_plan">
-                  
+
             <h4>
-              Machine statistical Learning 
+              Machine statistical Learning
             </h4>
 
-            <p>Maecenas dapibus vehicula eros, et lobortis felis elementum id. Praesent finibus purus quis sem tempus, at scelerisque diam convallis.
-               Praesent sagittis egestas quam. Maecenas odio leo, cursus feugiat enim eu, facilisis ullamcorper leo. Curabitur id leo eu tellus semper
-                porta sit amet vitae sapien.
+            <p>
+            My current venture is Porting all that I have learned in statistical Learning and put it into python for better readbility.
             </p>
           </li>
 
         </ul>
-     
-        <div class="advantages">
-          <h2>
-            Buy me a coffee? 
-          </h2>
-                      
-          <blockquote>
-            <p>
-              I also have interests in crypto, But well see what happends with that
-              Crypto wallet, Venmo, cashapp, 
-            </p>
-            
-            <cite>
-              
-            </cite>
 
-          </blockquote>
-        </div>
+
 
       </div>
     </div>
   </section>
 
-  <!-- Process section-->
-  
-  <section class="common-section" id="process">
+  <!-- Process section
+
+    <section class="common-section" id="process">
     <div class="container">
       <header class="common-section__header">
         <h2>
@@ -332,7 +318,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam interdum tortor
         </h4>
       </header>
-                        
+
       <div class="grid-container">
         <ul class="process">
           <li class="process__step process__step_research">
@@ -340,19 +326,19 @@
 
             </div>
           </li>
-                          
+
           <li class="process__step-info process__step-info_research is-active">
             <h3>
               <span>
                 Step 1
-              </span> 
+              </span>
 
               &mdash; Quisque a quam ante
 
             </h3>
 
             <p>
-              Proin mattis ex vel turpis interdum, in fringilla nibh tristique. Lorem ipsum dolor sit amet, 
+              Proin mattis ex vel turpis interdum, in fringilla nibh tristique. Lorem ipsum dolor sit amet,
               consectetur adipiscing elit. Cras id ipsum in diam aliquam sodales.
             </p>
           </li>
@@ -363,189 +349,200 @@
             </div>
 
           </li>
-                          
-          <li class="process__step-info process__step-info_develop">        
-            <h3>      
+
+          <li class="process__step-info process__step-info_develop">
+            <h3>
               <span>
                 Step 2
               </span>
-              &mdash; Aliquam erat volutpat          
-            </h3
-                             
-            <p>
-              Nullam laoreet lacus et ante consequat pharetra. Nam non felis tincidunt, auctor eros at, semper eros. Mauris feugiat a nibh et luctus.
-                             
+              &mdash; Aliquam erat volutpat
+            </h3 <p>
+            Nullam laoreet lacus et ante consequat pharetra. Nam non felis tincidunt, auctor eros at, semper eros.
+            Mauris feugiat a nibh et luctus.
+
             </p>
-      
+
           </li>
-                              
-                              <li class="process__step process__step_deploy">
-                                
-                                <div class="process__step-icon icon icon_deploy"></div>
-                              </li>
-                                <li class="process__step-info process__step-info_deploy">
-                                  <h3>
-                                    <span>Step 3</span> &mdash; Curabitur accumsan nulla
-                                  </h3>
-                                  <p>Donec lobortis, est iaculis rutrum feugiat, orci est ultrices mauris, in rhoncus dolor eros non sem. Duis feugiat, metus eu ullamcorper accumsan, massa risus dictum nisi, sit amet ultricies lectus nisl eu libero.
 
-                                  </p>
-                                </li>
-                                  <li class="process__step process__step_deliver">
-                                    <div class="process__step-icon icon icon_deliver">
+          <li class="process__step process__step_deploy">
 
-                                    </div>
-                                  </li>
-                                  <li class="process__step-info process__step-info_deliver">
-                                    <h3>
-                                      <span>Step 4</span> &mdash; Fusce aliquam lorem</h3>
-                                      <p>Donec non ligula imperdiet, tincidunt quam ut, pellentesque nisi. Quisque est ante, faucibus a urna nec, vehicula pellentesque lectus.
+            <div class="process__step-icon icon icon_deploy"></div>
+          </li>
+          <li class="process__step-info process__step-info_deploy">
+            <h3>
+              <span>Step 3</span> &mdash; Curabitur accumsan nulla
+            </h3>
+            <p>Donec lobortis, est iaculis rutrum feugiat, orci est ultrices mauris, in rhoncus dolor eros non sem. Duis
+              feugiat, metus eu ullamcorper accumsan, massa risus dictum nisi, sit amet ultricies lectus nisl eu libero.
 
-                                      </p>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </section><!-- Projects section--><section class="common-section" id="projects">
+            </p>
+          </li>
+          <li class="process__step process__step_deliver">
+            <div class="process__step-icon icon icon_deliver">
+
+            </div>
+          </li>
+          <li class="process__step-info process__step-info_deliver">
+            <h3>
+              <span>Step 4</span> &mdash; Fusce aliquam lorem
+            </h3>
+            <p>Donec non ligula imperdiet, tincidunt quam ut, pellentesque nisi. Quisque est ante, faucibus a urna nec,
+              vehicula pellentesque lectus.
+
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  Projects section
+  
+  -->
+
+
+  <section class="common-section" id="projects">
 
 
 
-  <header class="common-section__header">
-    <h2>
-      Projects
-    </h2>
+    <header class="common-section__header">
+      <h2>
+        Pictures and Projects
+      </h2>
       <p>
-         This will contain on going or complete projects
+        On going or complete projects
       </p>
-           
+
     </header>
-    
+
     <div class="projects-wrap">
       <div class="grid-container">
         <div class="projects">
           <figure class="projects__item">
-            <img src="static/images/projects/1.jpg" alt="Fruits">
+            <img src="static/images/projects/Monument.jpg" >
+            <figcaption>
+              <a class="icon icon_link" href="#" rel="nofollow">
+                This is a cool picture of Monument Valley During the Pandemic
+              </a>
 
+            </figcaption>
+          </figure>
 
+          <figure class="projects__item">
+            <img src="static/images/projects/siesta.jpg" >
+            <figcaption>
+              <a class="icon icon_link" href="#" rel="nofollow">
+               As Part of a class I needed to create an ADA accessible trail with proper diagrams
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="projects__item">
+            <img src="static/images/projects/vernal.jpg">
+            <figcaption>
+              <a class="icon icon_link" href="#" rel="nofollow">
+                This is a Snapshot UAS internship in Merced's Vernal Pools
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="projects__item">
+            <img src="static/images/projects/aslgroup.jpg">
+            <figcaption>
+              <a class="icon icon_link" href="#" rel="nofollow">
+                This is a picture of The ASL club I founded and led.
+              </a>
+            </figcaption>
+          </figure>
+
+          <figure class="projects__item">
+            <img src="static/images/projects/Agrecom.jpg">
              <figcaption>
-                  <a class="icon icon_link" href="#" rel="nofollow">
-                   This is Project 1                   ML poll stats notes
-                  </a>
+              <a class="icon icon_link" href="#" rel="nofollow">
+                My Capstone Project, Agrecom
+              </a>
+            </figcaption>
+          </figure>
 
-                </figcaption>
-              </figure>
+          <figure class="projects__item">
+            <img src="static/images/projects/stat.jpg">
+            <figcaption>
+              <a class="icon icon_link" href="#" rel="nofollow">
+                one of my statistical learning labs that I am translating from R to Python
+              </a>
+            </figcaption>
+          </figure>
 
-              <figure class="projects__item">
-                <img src="static/images/projects/2.jpg" alt="Donec lobortis, est iaculis rutrum feugiat">
-                <figcaption>
-                  <a class="icon icon_link" href="#" rel="nofollow">
-                    This is Project 2
-                  </a></figcaption>
-                </figure>
+          <figure class="projects__item">
+            <img src="static/images/projects/Yosemite.jpg">
+            <figcaption>
+              <a class="icon icon_link" href="#" rel="nofollow">
+                 A cool picture of Yosemite!
+              </a>
+            </figcaption>
+          </figure>
 
-                <figure class="projects__item">
-                  <img src="static/images/projects/5.jpg" alt="Duis feugiat, metus eu ullamcorper accumsan, massa risus dictum nisi">
-                  <figcaption>
-                    <a class="icon icon_link" href="#" rel="nofollow">
-                      This is Project 3
-                  </a>
-                </figcaption>
-              </figure>
+          <figure class="projects__item">
+            <img src="static/images/projects/friends.jpg" >
+            <figcaption>
+              <a class="icon icon_link" href="#" rel="nofollow">
+                A picture of my Friends!
+              </a>
+            </figcaption>
+          </figure>
 
-              <figure class="projects__item">
-                <img src="static/images/projects/6.jpg" alt="Donec non ligula imperdiet, tincidunt quam ut, pellentesque nisi">
-                <figcaption>
-                  <a class="icon icon_link" href="#" rel="nofollow">
-                    This is Project 4
-                  </a>
-                </figcaption>
-              </figure>
-
-              <figure class="projects__item">
-                <img src="static/images/projects/3.jpg" alt="Mauris a sem semper, maximus metus vitae, efficitur turpis">
-                <figcaption>
-                  <a class="icon icon_link" href="#" rel="nofollow">
-                   This is Project 5
-                  </a>
-                </figcaption>
-              </figure>
-
-              <figure class="projects__item">
-                <img src="static/images/projects/4.jpg" alt="Nunc sit amet massa id sem pretium luctus">
-                <figcaption>
-                  <a class="icon icon_link" href="#" rel="nofollow">
-                    This is Project 6
-                  </a>
-                </figcaption>
-                </figure>
-                    
-              <figure class="projects__item">
-                <img src="static/images/projects/7.jpg" alt="Nunc elementum arcu sit amet erat sodales fringilla">
-                <figcaption>
-                  <a class="icon icon_link" href="#" rel="nofollow">
-                    This is Project 7
-                  </a>
-                </figcaption>
-              </figure>
-
-              <figure class="projects__item">
-                <img src="static/images/projects/8.jpg" alt="Cras condimentum venenatis aliquet">
-                  <figcaption>
-                    <a class="icon icon_link" href="#" rel="nofollow">
-                      This is 8th project 
-                    </a>
-                  </figcaption>
-                </figure>
-
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- Testimonials section-->
-<section class="common-section" id="testimonials">
-  <div class="container">
-    <header class="common-section__header">
-      <h2>Affiliations</h2>
-      <p>
-        Perhaps schools work places that I work in
-      </p>
-    </header>
-   
-    <div class="grid-container">
-      <ul class="testimonials">
-        <li class="testimonials__item">
-          <img src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet">
-          <blockquote>
-            <p class="icon icon_ql">
-             duties for first affiliation.
-            </p>
-            <cite>
-              <span class="name">
-                Giles Posture,
-              </span>
-              <span class="role"> 
-                CompanyName
-              </span>
-            </cite>
-          </blockquote>
-        </li>
-        <li class="testimonials__item">
-          <img src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet">
-          <blockquote>
-            <p class="icon icon_ql">
-              duties for first affiliation
-            </p>
-            <cite>
-              <span class="name">
-                Sue Shei,
-              </span>
-              <span class="role">
-                 CompanyName
+  </section>
+
+
+  <!-- Affiliations section-->
+  <section class="common-section" id="testimonials">
+    <div class="container">
+      <header class="common-section__header">
+        <h2>
+          Affiliations
+        </h2>
+        <p>
+          Work/Clubs
+        </p>
+      </header>
+
+      <div class="grid-container">
+        <ul class="testimonials">
+          <li class="testimonials__item">
+            <img src="static/images/logos/placeholder.png" >
+            <blockquote>
+              <p class="icon icon_ql">
+                duties for first affiliation.
+              </p>
+              <cite>
+                <span class="name">
+                  IT Consultant
+                </span>
+                <span class="role">
+                  UC Merced
                 </span>
               </cite>
             </blockquote>
           </li>
-         
+          <li class="testimonials__item">
+            <img src="static/images/logos/placeholder.png">
+            <blockquote>
+              <p class="icon icon_ql">
+                duties for first affiliation
+              </p>
+              <cite>
+                <span class="name">
+                  Sue Shei,
+                </span>
+                <span class="role">
+                  CompanyName
+                </span>
+              </cite>
+            </blockquote>
+          </li>
+
         </ul>
         <ul class="testimonials">
           <li class="testimonials__item">
@@ -553,156 +550,182 @@
             <blockquote>
               <p class="icon icon_ql">
                 duties for first affiliation
-                </p>
-                <cite>
-                  <span class="name">
-                    Benjamin Evalent,
+              </p>
+              <cite>
+                <span class="name">
+                  Benjamin Evalent,
+                </span>
+                <span class="role">
+                  CompanyName
+                </span>
+              </cite>
+            </blockquote>
+          </li>
+          <li class="testimonials__item">
+            <img src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet">
+            <blockquote>
+              <p class="icon icon_ql">
+
+                duties for first affiliation
+              </p>
+              <cite>
+                <span class="name">
+                  Jake Weary,
+                </span>
+                <span class="role">
+                  CompanyName
+                </span></cite>
+            </blockquote>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts section-->
+
+  <div class="contacts-section" id="contacts">
+    <div class="container">
+
+
+      <section class="contact-card">
+        <header class="contact-card__header">
+
+          <h2>
+            Contact Info
+          </h2>
+
+          <h4>
+            Social Media
+          </h4>
+        </header>
+
+        <div class="contact-info">
+
+          <div class="contact-info__logo">
+             <img src="static\images\projects\spider.jpg" >
+          </div>
+
+          <div class="contact-info__group">
+            <div class="contact-info__additional">
+              <p1>
+                Github
+              </p1>
+              <p>
+              </p>
+              <p1>
+                Linkedin
+              </p1>
+  <p>
+              </p>
+               <p1>
+                Discord
+              </p1>
+
+            </div>
+            <div class="contact-info__vcard vcard">
+              <h4 class="fn org">
+                Ivan Padilla
+              </h4>
+              <p class="role title">
+                Bachelor of Science
+              </p> 
+              <p class="icon icon_location">
+                <a class="adr js-anchor" href="#gmap">
+                  <span class="country-name">
+                    United States
+                  </span>,&nbsp;
+
+                  <span class="locality">
+
+                    California
                   </span>
-                  <span class="role">
-                     CompanyName
-                    </span>
-                  </cite>
-                </blockquote>
-              </li>
-              <li class="testimonials__item">
-                <img src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet">
-                <blockquote>
-                  <p class="icon icon_ql">
-                    
-                    duties for first affiliation
-                     </p>
-                     <cite>
-                       <span class="name">
-                         Jake Weary,
-                        </span>
-                        <span class="role"> 
-                          CompanyName
-                        </span></cite>
-                      </blockquote>
-                    </li>
-                   
-                      </ul>
-                    </div>
-                  </div>
-                </section>
 
-                <!-- Contacts section-->
-                <div class="contacts-section" id="contacts">
-                  <div class="container">
-                    <section class="contact-card">
-                      <header class="contact-card__header">
+                </a>
+              </p>
+              <p class="icon icon_mail">
 
-                        <h2>
-
-                          Contact Info
-
-                        </h2>
-                       
-                        <h4>
-                          Social Media
-                        </h4>
-                      </header>
-                      
-                      <div class="contact-info">
-
-                        <div class="contact-info__logo">
-                          PUT A LOGO
-                        </div>
-
-                        <div class="contact-info__group">
-                          <div class="contact-info__additional">
-                            <p1>
-                              Github
-                            </p1>
-                            <p>
-                              idannny
-                            </p>
-
-                            <p1>
-                                 
-                              Linkedin
-                             
-                            </p1>
-                            <p>
-                              linkedin.com/in/ivandpadilla6/
-                            </p>
-
-
-
-                          </div>
-                          <div class="contact-info__vcard vcard">
-                            <h4 class="fn org">
-                              Ivan Padilla
-                            </h4>
-                            <p class="role title">
-                              Computer Science Student 
-                            </p>
-                            <p class="icon icon_location">
-                              <a class="adr js-anchor" href="#gmap">
-                                <span class="country-name">
-                                  United States
-                                </span>,&nbsp;
-
-                                <span class="locality"><!--GOOGLE MAPS-->
-                                  California
-                                </span>
-                              </a>
-                            </p>
-                            <p class="icon icon_mail">
-
-                              <a class="email" href="dannyivan6@outlook.com">
-                                dannyivan6@outlook.com
-                              </a>
-
-                             
-                            </p>
-                             
-            
-                            </div>
-
-                              <ul class="contact-info__social">
-
-                                <li><a class="icon icon_gplus" rel="nofollow">I'm on Google+</a></li>
-                                <li><a class="icon icon_vk" rel="nofollow">I'm in Vk</a></li>
-                                <li><a class="icon icon_in" rel="nofollow">My Linkedin profile</a></li>
-                                <li><a class="icon icon_rss" rel="nofollow">RSS feed... maybe
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
+                <a class="email" href="dannyivan6@outlook.com">
+                  dannyivan6@outlook.com
+                </a>
+              </p>
             </div>
 
-  <div class="gmap" id="gmap">
-    
-  </div>
-</div>
+            <ul class="contact-info__social">
 
-  <!-- Footer-->
+              <li><a class="icon icon_gplus" rel="nofollow">I'm on Google+</a></li>
+              <li><a class="icon icon_vk" rel="nofollow">I'm in Vk</a></li>
+              <li><a class="icon icon_in" rel="nofollow">My Linkedin profile</a></li>
+              <li><a class="icon icon_rss" rel="nofollow">RSS feed... maybe
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+
+    <div class="gmap" id="gmap">
+
+      <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+
+      <blockquote class="advantages">
+        <h2>
+          Buy me a coffee?
+        </h2>
+
+        <blockquote>
+          <p>
+            I also have interests in crypto, But well see what happends with that
+            Crypto wallet, Venmo, cashapp,
+          </p>
+        </blockquote>
+      </blockquote>
+    </div>
+
+
+    <!-- Footer-->
     <footer class="main-footer">
       <div class="container">
-        <!-- copyright
-        <p class="main-footer__copyright">&copy;&nbsp;
-          <span>
-            <>  
-          </span>
-        </p>
-      -->
-      <a class="main-footer__gotop icon icon_gotop js-anchor" href="#home">
-        To top!
-      </a>
-      
+    
+        <a class="main-footer__gotop icon icon_gotop js-anchor" href="#home">
+          To top!
+        </a>
+
         <p class="main-footer__links">
           Made By&nbsp;<a href="https://www.linkedin.com/in/ivandpadilla6/">
-            
+
             Ivan Padilla
           </a>
         </p>
       </div>
     </footer>
 
-  <script src="static/js/body.min.js">
+    <script src="static/js/body.min.js">
 
-  </script>
-</body></html>
+    </script>
+</body>
+</html>
