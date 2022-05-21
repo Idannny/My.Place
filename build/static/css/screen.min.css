@@ -375,7 +375,7 @@ a:hover {
 }
 
 .icon_ql:before {
-    content: "\e804"
+    content: "*"
 }
 
 .icon_qr:before {
