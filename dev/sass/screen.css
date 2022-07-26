@@ -67,7 +67,7 @@ html, body {
 }
 
 body {
-  background: #fff url("../images/bg-pattern.jpg") repeat;
+  background: rgb(255, 0, 0) url("../images/bg-pattern.jpg") repeat;
 }
 
 .container {
