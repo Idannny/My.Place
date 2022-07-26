@@ -379,7 +379,7 @@ a:hover {
 }
 
 .icon_qr:before {
-    content: "\e805"
+    image-rendering: url("C:\Users\ivun\Desktop\My.Place\My.Place\build\static\images\contact\Git.png") ; 
 }
 
 .icon_link:before {
@@ -703,23 +703,25 @@ a:hover {
     min-width: 100%;
     min-height: 100%;
     z-index: 0;
-    background: url(../images/bg.jpg) center 0 no-repeat;
+   
     background-attachment: fixed;
     background-size: cover
 }
 
 .home-section__overlay {
+    
+ 
     position: relative;
     width: 100%;
     height: 100%;
     min-height: 100%;
-    background-color: transparent;
-    background-color: rgba(44, 62, 80, .3);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000);
-    zoom: 1;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDoAABSCAABFVgAADqXAAAXb9daH5AAAAAZSURBVHjaYmCAAGM0GjfHGEMGAAAA//8DACm0ATMe8beGAAAAAElFTkSuQmCC);
-    background-repeat: repeat;
-    background-attachment: fixed
+    background-position: right;
+    background-image: url("../images/Moon.jpg");
+    background-size: contain;
+
+
+    
+   
 }
 
 .home-section__header {
@@ -747,8 +749,8 @@ a:hover {
 .about-card {
     -webkit-box-shadow: 2px 2px 4px -2px #2c3e50;
     box-shadow: 2px 2px 4px -2px #2c3e50;
-    float: left;
-    width: 73%;
+    float: right;
+    width: 93%;
     width: calc(75% - 40px);
 
     margin-left: 1%;
@@ -838,7 +840,7 @@ a:hover {
 }
 
 .services__item:hover:before {
-    color: #4272db
+    color: #c91919
 }
 
 .advantages {
@@ -1938,4 +1940,6 @@ a:hover {
     .testimonials__item blockquote {
         margin-left: 0
     }
+    
+
 }
