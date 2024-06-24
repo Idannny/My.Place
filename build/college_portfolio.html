@@ -13,15 +13,10 @@
   <meta name="description" content="Page-specific description">
   <meta name="keywords" content="Page-specific keywords">
 
-  <!-- <link rel="shortcut icon" href="eye.ico"> -->
-
+  <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-
-  <link id="dynamic-favicon" rel="icon" type="image" href="eye.ico">
-
+  <link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon">
   <link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png">
-
   <link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png">
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic"
@@ -32,27 +27,6 @@
 </head>
 
 <body>
-
-
-  <script>
-    const faviconImages = [
-      "eye1.ico",
-      "eye2.ico",
-      "eye3.ico",
-      "eye4.ico",
-      "eye.ico"
-    ];
-
-    let currentIconIndex = 0;
-
-    function changeFavicon() {
-      const favicon = document.getElementById('dynamic-favicon');
-      favicon.href = faviconImages[currentIconIndex];
-      currentIconIndex = (currentIconIndex + 1) % faviconImages.length;
-    }
-
-    setInterval(changeFavicon, 500); // Change favicon every 1000 milliseconds (1 second)
-  </script>
 
   <script>progressJs().setOptions({ overlayMode: true, theme: 'custom' }).start();
 
@@ -80,7 +54,40 @@
   <header class="main-header">
 
     <div class="first-nav">
-      
+      <!--
+        <div class="container">
+          
+          <nav class="first-nav__links">
+              <ul>
+               
+                <li>
+                  <a class="is-selected">
+                    english
+                  </a>
+                </li>
+                    
+                <li>
+                  <a href="#">
+                    françaiS
+                  </a>
+                </li>
+                  
+                <li>
+                  <a href="#">
+                    deutsch
+                  </a>
+                </li>
+              
+
+              </ul>
+
+          </nav>
+             
+            <a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">
+               Menu
+            </a>
+        </div>
+      -->
     </div>
 
     <div class="second-nav js-nav">
@@ -153,7 +160,7 @@
           </h1>
 
           <h2>
-            Student of Technology & Finance
+            Programmer, Adventurer, Foodie 
           </h2>
 
         </header>
@@ -168,45 +175,50 @@
       <div class="about-card">
         <header class="about-card__header">
 
-          
-            <center><h2>About me</h2> 
-            </center>
-           
+          <h2>
+            About me
+          </h2>
+
           <h4>
-            I am based in Southern California with interests in Machine Learning, Renewable energy, Robotics and Stats. Ill have deep conversations about anything!
-            I can communicate conversationally in English, Spanish, and ASL. Other hobbies include surfing waves and 3D Printing and Distro-hopping! I also enjoy media editing using Premiere Pro and Photoshop and improving websites.
+            I am based in Southern California with interests in Machine Learning and Renewable energy. I also like to have deep conversations about anything!
+            I can communicate conversationally in English, Spanish, and ASL. Other hobbies include surfing waves and the internet! I also enjoy media editing using Premiere Pro and Photoshop and improving websites.
           </h4>
 
         </header>
 
         <div class="about-card__info">
           <p>
-            Programming literacy:  Python, C++, NextJS, mySQL, MSSQL, Excel, Visual Basic...
-            
+            Programming languages: R, python, C++, nesC, SQL
+            IDE I use include: R studio, Pycharm, Visual Studio Code with WSL. 
            
           </p>
           <p>
-
+            Others I like: C#, JS, Python, C++
           </p>
           <p>
-            Software I like: PowerBI, Tableu, Grafana, Fedora, RStudio, Pycharm, Visual Studio & Code, vim...
+            IDEs I like: R studio, Pycharm, Visual Studio Code, wsl-nano/vim, Qt
           </p>
 
           <blockquote>
             <p>
-              Sharpening Data Analysis Skills, Financial Literacy and visualization
+              I am looking forward to complete higher education and continue my studies in Computer science. My love for mathematics
+              has lead me to have interests in Machine Learning and Statistical Learning. 
             </p>
           </blockquote>
 
           <p>
-            My Current Interests are in Fininace, GPTs, Robotics, 3D Printing and Art
+            While completing my undergrad, I have participated in research which included hands on field work and data collection and analysis for UCM's Unmanned Aircraft systems 
+            lab and collected data for modeling an invasive plant species. As well as that, I was lucky to research with UC solar where my duties included analyzing
+            an overwhelming amount of data regarding renewable resources in order to better understand a 3rd party software intended for visualizing and predicting using renewable resource data.  
+
           </p>
 
           <p class="about-card__info-status">
             <span>
               Current status:
             </span>
-             RBC Bearings - Division Level Developer, Manufacturing Data Analyst, UCM Alum
+
+            UCM Alum, Administrative intern for Los Angeles City Parks and Recreation
 
           </p>
         </div>
@@ -229,16 +241,15 @@
 
       <div class="grid-container">
         <ul class="services services_advisory">
-
-
-          
           <li class="services__item icon icon_research">
             <h4>
-              Computers
+              Computer Hardware
             </h4>
             <p>
-              I Freelanced for a bit Fixing computers, Experience making servers for intranet and shared drives.
-              
+              I built my Desktop! I have a Mini-tower with an AMD Processor and AMD Video Card with some substantial
+              RAM.
+              I also have a simple arduino that i mess with from time to time. I have some experience with soldering as
+              well as repairing computer components.
             </p>
           </li>
 
@@ -247,8 +258,8 @@
               Languages
             </h4>
             <p>
-              I have the most Practice in python. As far as world languages go I have conversationaly skills in 
-              Spanish, English and ASL.  
+              I have the most Practice in C++ and I have interests in Python and SQL. As far as world languages go I have conversationaly skills in 
+              spanish, English and ASL.  
             </p>
           </li>
         </ul>
@@ -260,7 +271,7 @@
             </h4>
 
             <p>
-              Hiking and fishing. Backpacking and travel plans coming up
+              This year I want to do more Hiking and fishing. There are some trails near my house and visiting those may be the best. I want to do more crazy hikes!
 
             </p>
           </li>
@@ -284,7 +295,99 @@
     </div>
   </section>
 
+  <!-- Process section
 
+    <section class="common-section" id="process">
+    <div class="container">
+      <header class="common-section__header">
+        <h2>
+          How it works
+        </h2>
+
+        <h4>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam interdum tortor
+        </h4>
+      </header>
+
+      <div class="grid-container">
+        <ul class="process">
+          <li class="process__step process__step_research">
+            <div class="process__step-icon icon icon_research is-active">
+
+            </div>
+          </li>
+
+          <li class="process__step-info process__step-info_research is-active">
+            <h3>
+              <span>
+                Step 1
+              </span>
+
+              &mdash; Quisque a quam ante
+
+            </h3>
+
+            <p>
+              Proin mattis ex vel turpis interdum, in fringilla nibh tristique. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Cras id ipsum in diam aliquam sodales.
+            </p>
+          </li>
+
+          <li class="process__step process__step_develop">
+
+            <div class="process__step-icon icon icon_develop">
+            </div>
+
+          </li>
+
+          <li class="process__step-info process__step-info_develop">
+            <h3>
+              <span>
+                Step 2
+              </span>
+              &mdash; Aliquam erat volutpat
+            </h3 <p>
+            Nullam laoreet lacus et ante consequat pharetra. Nam non felis tincidunt, auctor eros at, semper eros.
+            Mauris feugiat a nibh et luctus.
+
+            </p>
+
+          </li>
+
+          <li class="process__step process__step_deploy">
+
+            <div class="process__step-icon icon icon_deploy"></div>
+          </li>
+          <li class="process__step-info process__step-info_deploy">
+            <h3>
+              <span>Step 3</span> &mdash; Curabitur accumsan nulla
+            </h3>
+            <p>Donec lobortis, est iaculis rutrum feugiat, orci est ultrices mauris, in rhoncus dolor eros non sem. Duis
+              feugiat, metus eu ullamcorper accumsan, massa risus dictum nisi, sit amet ultricies lectus nisl eu libero.
+
+            </p>
+          </li>
+          <li class="process__step process__step_deliver">
+            <div class="process__step-icon icon icon_deliver">
+
+            </div>
+          </li>
+          <li class="process__step-info process__step-info_deliver">
+            <h3>
+              <span>Step 4</span> &mdash; Fusce aliquam lorem
+            </h3>
+            <p>Donec non ligula imperdiet, tincidunt quam ut, pellentesque nisi. Quisque est ante, faucibus a urna nec,
+              vehicula pellentesque lectus.
+
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  Projects section
+  
+  -->
 
 
   <section class="common-section" id="projects">
@@ -363,7 +466,7 @@
             <img src="static/images/projects/Yosemite.jpg">
             <figcaption>
               <a class="icon icon_link" href="#" rel="nofollow">
-                 Hiking in Yosemite!
+                 A cool picture of Yosemite!
               </a>
             </figcaption>
           </figure>
@@ -372,12 +475,11 @@
             <img src="static/images/projects/friends.jpg" >
             <figcaption>
               <a class="icon icon_link" href="#" rel="nofollow">
-                A picture of my Friends and I in San Fransisco!
+                A picture of my Friends!
               </a>
             </figcaption>
           </figure>
 
-          
         </div>
       </div>
     </div>
@@ -392,46 +494,12 @@
           Affiliations
         </h2>
         <p>
-          Work/Organizations
+          Work/Clubs
         </p>
       </header>
 
       <div class="grid-container">
         <ul class="testimonials">
-
-          <li class="testimonials__item">
-            <img src="static/images/projects/logos/rbc.png" >
-            <blockquote>
-              <p class="icon icon_ql">
-                Software Developer, Division Developer for Internal Tools
-              </p>
-              <cite>
-                <span class="name">
-                  Cost Estimator, Programmer, Manufacturing Data Analyst
-                </span>
-                <span class="role">
-                  Roller Bearings Company of America
-                </span>
-              </cite>
-            </blockquote>
-          </li>
-          <li class="testimonials__item">
-            <img src="static/images/projects/logos/artrid.png" >
-            <blockquote>
-              <p class="icon icon_ql">
-                Website Development Platform
-              </p>
-              <cite>
-                <span class="name">
-                  Business Consultant, Programmer,
-                </span>
-                <span class="role">
-                  Artrid.net
-                </span>
-              </cite>
-            </blockquote>
-          </li>
-
           <li class="testimonials__item">
             <img src="static/images/projects/logos/ucmercedicon.png" >
             <blockquote>
@@ -488,7 +556,7 @@
             <blockquote>
               <p class="icon icon_ql">
 
-                Analyzed code and Solar/Wind data
+                Analyzing code and Solar/Wind data
               </p>
               <cite>
                 <span class="name">
@@ -526,7 +594,7 @@
         <div class="contact-info">
 
           <div class="contact-info__logo">
-             <img src="static\images\dannben.jpg" width="50%" height="50%" >
+             <img src="static\images\projects\spider.jpg" >
           </div>
 
           <div class="contact-info__group">
