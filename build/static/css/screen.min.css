@@ -9,6 +9,100 @@ body {
     padding: 20px;
 }
 
+/* Main header and first nav styles */
+.main-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    background-color: #333;
+}
+
+.first-nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Second nav styles */
+.second-nav {
+    background-color: #555;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.second-nav__logo {
+    display: inline-block;
+    padding: 10px;
+}
+
+.second-nav__logo img {
+    width: 30px;
+    height: auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background-color: #666;
+    border-radius: 5px;
+}
+
+/* Responsive layout for mobile */
+@media screen and (max-width: 600px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+}
+
+/* Main content area */
+.main-content {
+    margin-top: 150px; /* Adjust top margin to avoid content being hidden under the navbar */
+    padding: 20px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}/* General styles for mobile */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    padding: 20px;
+}
+
 /* Navbar styles */
 .navbar {
     background-color: #333;
